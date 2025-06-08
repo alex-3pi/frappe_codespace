@@ -17,9 +17,12 @@ nvm use 18
 echo "nvm use 18" >> ~/.bashrc
 cd /workspace
 
+#install specific frappe version
+
 bench init \
 --ignore-exist \
 --skip-redis-config-generation \
+--frappe-branch version-15 \
 frappe-bench
 
 cd frappe-bench
