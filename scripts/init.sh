@@ -18,6 +18,9 @@ nvm use 18
 echo "nvm use 18" >> ~/.bashrc
 cd /workspace
 
+#install missing libs
+npm install -g yarn
+
 #install specific frappe version
 
 bench init \
