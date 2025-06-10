@@ -35,13 +35,9 @@ bench setup requirements
 
 # Use containers instead of localhost
 bench set-mariadb-host mariadb
-# bench set-redis-cache-host redis-cache:6379
-# bench set-redis-queue-host redis-queue:6379
-# bench set-redis-socketio-host redis-socketio:6379
-
-bench set-redis-cache-host redis://redis:6379
-bench set-redis-queue-host redis://redis:6379
-bench set-redis-socketio-host redis://redis:6379
+bench set-redis-cache-host redis-cache:6379
+bench set-redis-queue-host redis-queue:6379
+bench set-redis-socketio-host redis-socketio:6379
 
 # Remove redis from Procfile
 sed -i '/redis/d' ./Procfile
